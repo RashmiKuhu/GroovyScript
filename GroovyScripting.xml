@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="504b5946-d970-40e1-844d-313e844e2472" activeEnvironment="Default" name="LearningGroovyInSOAPUI" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="70a67537-a419-4dde-8809-c103a5598eec" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://reqres.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="Users" path="/api/users" id="35208a1e-b441-4038-9e37-42a01ac44807"><con:settings/><con:parameters><con:parameter><con:name>page</con:name><con:value>2</con:value><con:style>QUERY</con:style><con:default>2</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Users 1" id="15cb6a01-fa3b-453a-b1bc-bae0f454d3f1" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element></con:representation><con:request name="Request 1" id="eef12f28-1620-47dd-aa0b-026c693ad7e7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="d67092b3-8d60-46da-99ac-a245088066b2" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://reqres.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="2" path="/api/users/2" id="774878c6-495b-43d1-b0ec-cf1f4ad2868f"><con:settings/><con:parameters/><con:method name="2 1" id="fb6045a6-0805-4fcc-8092-da6bc635c9c7" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://reqres.in/api/users/2">ns:Response</con:element></con:representation><con:request name="Request 1" id="d81da7af-572c-49d0-8e23-16b57d4cd226" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "zion resident"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" id="3a0a4e1a-5d61-431f-9fb5-03c66c637ebe" wsaVersion="NONE" name="CalculatorSoap12" type="wsdl" bindingName="{http://tempuri.org/}CalculatorSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.dneonline.com/calculator.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint></con:endpoints><con:operation id="bd18af60-4183-4ffa-881f-8a879f8083c5" isOneWay="false" action="http://tempuri.org/Add" name="Add" bindingOperationName="Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7b3d81b8-7d81-4e5e-832e-a3e88e4c06cc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Add>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculatorSoap/AddRequest"/></con:call></con:operation><con:operation id="2423f2e7-f0bd-4e40-abce-f96b8aed7ee9" isOneWay="false" action="http://tempuri.org/Divide" name="Divide" bindingOperationName="Divide" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8457a764-942b-42bd-9806-6e275aa67e3f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Divide>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Divide>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculatorSoap/DivideRequest"/></con:call></con:operation><con:operation id="c9136c14-f22e-4a17-8504-96181b0ae27e" isOneWay="false" action="http://tempuri.org/Multiply" name="Multiply" bindingOperationName="Multiply" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="80c04e71-7f9b-4f6f-9695-683cfcea7a70" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Multiply>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Multiply>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculatorSoap/MultiplyRequest"/></con:call></con:operation><con:operation id="9ea58938-8148-4b3c-a716-514f2e965e71" isOneWay="false" action="http://tempuri.org/Subtract" name="Subtract" bindingOperationName="Subtract" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6742da9d-0255-4e02-9606-b6295c260307" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Subtract>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Subtract>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculatorSoap/SubtractRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="aa023824-50a2-4832-8e7c-f59567c3838c" wsaVersion="NONE" name="CalculatorSoap" type="wsdl" bindingName="{http://tempuri.org/}CalculatorSoap" soapVersion="1_1" anonymous="optional" definition="http://www.dneonline.com/calculator.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.dneonline.com/calculator.asmx?WSDL"><con:part><con:url>http://www.dneonline.com/calculator.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Subtract">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubtractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubtractResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Multiply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MultiplyResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Divide">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DivideResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DivideResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddSoapIn">
+    <wsdl:part name="parameters" element="tns:Add"/>
+  </wsdl:message>
+  <wsdl:message name="AddSoapOut">
+    <wsdl:part name="parameters" element="tns:AddResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SubtractSoapIn">
+    <wsdl:part name="parameters" element="tns:Subtract"/>
+  </wsdl:message>
+  <wsdl:message name="SubtractSoapOut">
+    <wsdl:part name="parameters" element="tns:SubtractResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MultiplySoapIn">
+    <wsdl:part name="parameters" element="tns:Multiply"/>
+  </wsdl:message>
+  <wsdl:message name="MultiplySoapOut">
+    <wsdl:part name="parameters" element="tns:MultiplyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DivideSoapIn">
+    <wsdl:part name="parameters" element="tns:Divide"/>
+  </wsdl:message>
+  <wsdl:message name="DivideSoapOut">
+    <wsdl:part name="parameters" element="tns:DivideResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="CalculatorSoap">
+    <wsdl:operation name="Add">
+      <wsdl:documentation>Adds two integers. This is a test WebService. ©DNE Online</wsdl:documentation>
+      <wsdl:input message="tns:AddSoapIn"/>
+      <wsdl:output message="tns:AddSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Subtract">
+      <wsdl:input message="tns:SubtractSoapIn"/>
+      <wsdl:output message="tns:SubtractSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Multiply">
+      <wsdl:input message="tns:MultiplySoapIn"/>
+      <wsdl:output message="tns:MultiplySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Divide">
+      <wsdl:input message="tns:DivideSoapIn"/>
+      <wsdl:output message="tns:DivideSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorSoap" type="tns:CalculatorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://tempuri.org/Add" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subtract">
+      <soap:operation soapAction="http://tempuri.org/Subtract" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Multiply">
+      <soap:operation soapAction="http://tempuri.org/Multiply" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Divide">
+      <soap:operation soapAction="http://tempuri.org/Divide" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CalculatorSoap12" type="tns:CalculatorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Add">
+      <soap12:operation soapAction="http://tempuri.org/Add" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subtract">
+      <soap12:operation soapAction="http://tempuri.org/Subtract" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Multiply">
+      <soap12:operation soapAction="http://tempuri.org/Multiply" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Divide">
+      <soap12:operation soapAction="http://tempuri.org/Divide" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Calculator">
+    <wsdl:port name="CalculatorSoap" binding="tns:CalculatorSoap">
+      <soap:address location="http://www.dneonline.com/calculator.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorSoap12" binding="tns:CalculatorSoap12">
+      <soap12:address location="http://www.dneonline.com/calculator.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint></con:endpoints><con:operation id="38f89da8-498b-4eea-9c16-5c62d93e3b4b" isOneWay="false" action="http://tempuri.org/Add" name="Add" bindingOperationName="Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="64a14c5d-4f8f-4906-9147-63cd01719751" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Add>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Add"/></con:call></con:operation><con:operation id="84c48797-c68e-4095-b95a-7e445571335e" isOneWay="false" action="http://tempuri.org/Divide" name="Divide" bindingOperationName="Divide" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="26b302f1-c3a1-409b-a06f-c7aeb6d61c38" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Divide>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Divide>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Divide"/></con:call></con:operation><con:operation id="bfade4ce-e0e9-473d-bdba-37eb858a3d49" isOneWay="false" action="http://tempuri.org/Multiply" name="Multiply" bindingOperationName="Multiply" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b66a7074-a9e3-4539-9707-400c81b77fdd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Multiply>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Multiply>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Multiply"/></con:call></con:operation><con:operation id="cf5aee8b-a3f7-4fad-8f8c-7db651284d36" isOneWay="false" action="http://tempuri.org/Subtract" name="Subtract" bindingOperationName="Subtract" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5cd53b3c-2fb5-427a-97b7-e576aafe81ae" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Subtract>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Subtract>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Subtract"/></con:call></con:operation></con:interface><con:testSuite id="a2b7d892-eb2e-4a48-b8fd-880794b2cbf1" name="WorkingWithRequestAndResponse"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a580b6b4-fa80-47b7-8b2d-e95856f07b81" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WorkingWithJson" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="1565d043-f6a4-494e-ad7b-b2e275e609de"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>user</con:name><con:value>Byron</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="ListUsers" id="941afa11-a414-4773-886d-c1bd9f9e71b3"><con:settings/><con:config service="https://reqres.in" resourcePath="/api/users" methodName="Users 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ListUsers" id="eef12f28-1620-47dd-aa0b-026c693ad7e7" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="Simple Contains" id="8b58af1a-49ad-402b-a974-94c295cc4abd" name="Contains"><con:configuration><token>data</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="f9aefcdc-74e8-41ab-98e6-05c4b2f59c8b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="013c74f4-e5aa-4d21-80b2-e2a29fb970c4" name="Script Assertion"><con:configuration><scriptText>log.info messageExchange.responseHeaders["#status#"]
+
+//asserting status code
+assert messageExchange.responseHeaders["#status#"]== ["HTTP/1.1 200 OK"]
+
+//This script picks up data from the reponse of ListUsers 
+
+//JsonSlurper to parse json
+def parsedJson = new groovy.json.JsonSlurper().parseText(messageExchange.response.responseContent)
+
+//the value of name from response
+def page = parsedJson.page
+
+//asserting
+assert page == 2
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="DataTransfere" id="6d14ddb3-e73e-4720-af6c-baf87a55046a"><con:settings/><con:config><script>//read response from the previous test step
+def resp = testRunner.testCase.getTestStepByName('ListUsers').getPropertyValue('response')
+
+//initialize JsonSlurper
+def jsonSlurper = new groovy.json.JsonSlurper()
+
+//pass response to jsonslurper
+def object = jsonSlurper.parseText(resp)
+
+// get the json path
+def value = object.data[3].first_name
+
+testRunner.testCase.getTestStepByName('Properties').setPropertyValue('user',value)
+</script></con:config></con:testStep><con:testStep type="restrequest" name="UpdateUserDetails" id="a8e04a1e-e44a-461b-b605-3bd8d453b628"><con:settings/><con:config service="https://reqres.in" resourcePath="/api/users/2" methodName="2 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateUserDetails" id="d81da7af-572c-49d0-8e23-16b57d4cd226" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request>{
+    "name": "${Properties#user}",
+    "job": "zion resident"
+}</con:request><con:originalUri>https://reqres.in/api/users/2</con:originalUri><con:assertion type="GroovyScriptAssertion" id="a7fc5eb4-c620-4285-9103-385a7095ee00" name="Script Assertion"><con:configuration><scriptText>log.info messageExchange.responseHeaders["#status#"]
+
+//asserting status code
+assert messageExchange.responseHeaders["#status#"]== ["HTTP/1.1 200 OK"]
+
+//This script picks up data from the reponse of UpdateUserDetails
+
+//JsonSlurper to parse json
+def parsedJson = new groovy.json.JsonSlurper().parseText(messageExchange.response.responseContent)
+
+//the value of name from response
+def name = parsedJson.name
+
+//asserting
+assert name == "Byron"
+
+//printing the value of name
+log.info name
+
+//the value of meta_title from response
+def job = parsedJson.job
+
+//printing the value of meta_title
+log.info job
+
+//asserting
+assert job == "zion resident"
+
+
+
+                    </scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="27f14b37-4641-4f51-bb91-f86b395d8b6e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WorkingWithXML" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="1855b1e0-b478-45b1-ba40-b0b91987d39a"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>addResult</con:name><con:value>77</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Add" id="11185be8-4918-4f97-9635-c270380510f9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Add</con:operation><con:request name="Add" id="3b7f3cac-74a0-48ae-b0fe-6a37777be9ad"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Add>\r
+         <tem:intA>22</tem:intA>\r
+         <tem:intB>55</tem:intB>\r
+      </tem:Add>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="093405c7-0fd9-47d8-9bc9-80837c35585e"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="DataTransfer" id="57637f10-5ca9-424b-b482-df8bca2ca0db"><con:settings/><con:config><script>def resp = testRunner.testCase.getTestStepByName('Add').getPropertyValue("response")
+
+def object = new XmlSlurper().parseText(resp)
+
+def value = object.text()
+
+log.info '   value is : '+value
+
+testRunner.testCase.getTestStepByName('Properties').setPropertyValue('addResult', value)</script></con:config></con:testStep><con:testStep type="request" name="Multiply" id="9f736aca-3464-4aa2-b6d0-ed88bd8b9ce3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap12</con:interface><con:operation>Multiply</con:operation><con:request name="Multiply" id="77ac42a4-981e-490f-aa05-6ce709736333"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Multiply>\r
+         <tem:intA>${Properties#addResult}</tem:intA>\r
+         <tem:intB>11</tem:intB>\r
+      </tem:Multiply>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="7d080470-03a8-4e5f-a088-bf1927f1fdf9"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="e61ec127-d6f8-437a-8f5d-7f8570be3b34" name="Groovy Scripting"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1a0297a1-a8f7-46aa-bb66-78e063455072" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Basics of Groovy" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Basics" id="2e4a2aba-17d9-452b-a18f-7aacc3121118"><con:settings/><con:config><script>// this is a single line comment
+
+/*
+ * This is
+ * multiline comment
+ */
+
+//logs
+log.info ("     Hey There!  ");
+
+//variables
+a = 10
+int b = 20;
+def str = " This is a string!"
+c = a + b + str;
+log.info ("   Result is : " + c) ;
+
+// working with/using/importing java libraries in groovy
+import java.io.*;
+
+//way to know all the methos of any class (testrunner)
+log.info testRunner.metaClass.methods*.name.unique().sort()</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2fbcdc36-69c9-4537-b541-59088fc285cb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Working with Class and methods" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Hello" id="23d251fd-34e8-4f71-84b6-50a92c0ad6ed"><con:settings/><con:config><script>class Hello{
+
+	def log;
+	def context;
+	def testRunner;
+
+	def Hello(log, context, testRunner){
+		this.log = log
+		this.context = context
+		this.testRunner = testRunner		
+	}
+
+	def sayHello(String name){
+		//concatinaion
+		log.info ("   Hello " + name + "!");
+ 	}
+ 
+}
+
+context.setProperty("Hello", new Hello(log,context,testRunner))</script></con:config></con:testStep><con:testStep type="groovy" name="Call Hello" id="a9fd1630-e716-4af3-b43f-2ecd7c3ac7ce"><con:settings/><con:config><script>//calling and storing "Hello" class (or teststep)
+def testStep = testRunner.testCase.getTestStepByName("Hello")
+
+//executing the class
+testStep.run(testRunner, context)
+
+//accessing methods in the class
+context.Hello.sayHello("Shreyata")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8d5c0b80-5a5f-4e8f-b44b-92fe018cf921" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Working with Classes and Objects" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Call Hello" id="55adafc1-74d1-4349-a9b7-77644accdba8"><con:settings/><con:config><script>//calling and storing "Hello" class (or teststep)
+project = testRunner.testCase.testSuite.project ;
+testcase = project.testSuites["Groovy Scripting"].testCases["Working with Class and methods"] ; 
+hellostep = testcase.getTestStepByName("Hello");
+
+//executing the class
+hellostep.run(testRunner, context)
+
+//accessing methods in the class
+context.Hello.sayHello("Shreyata")
+
+def ref = context.Hello;
+ref.sayHello("World");
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2bc5f44b-53c8-405e-aec1-a9bee076c6d5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Running Tests from Groovy Script" searchProperties="true"><con:settings/><con:testStep type="groovy" name="SampleStep" id="49800ed8-98a9-45af-9ab4-3c08289a0c16"><con:settings/><con:config><script>log.info "    Sample step executed!  "</script></con:config></con:testStep><con:testStep type="groovy" name="RunTestFromSameTestSuite" id="c15853ae-e62a-4d9b-8e71-2a68def15dc9"><con:settings/><con:config><script>//Groovy - run request from same TestCase
+def status = testRunner.runTestStepByName("SampleStep")
+def result = status.getStatus().toString();
+log.info ("   ---- "+result)</script></con:config></con:testStep><con:testStep type="groovy" name="RunTestFromAnotherTestSuite" id="39d4e0ae-3088-4304-bb7b-f62718072e64"><con:settings/><con:config><script>//Groovy - run request from another TestCase or TestSuite
+project = testRunner.testCase.testSuite.project ;
+tcase = project.testSuites["SupportingTestSuite"].testCases["SupportingRunTest"] ; 
+tstep = tcase.getTestStepByName("SupportingSampleStep");
+def status = tstep.run(testRunner, context)
+def result = status.getStatus().toString();
+log.info ("   ----   "+result)
+
+if (result == "OK"){
+	log.info " Test Passed!!! "
+}else {
+	log.infor " Test Failed! "
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="bce9ed3b-90d1-4b0c-89a3-36ef6a9d5f75" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Loops" searchProperties="true"><con:settings/><con:testStep type="groovy" name="While" id="829bc544-70a9-4a1e-aa14-de761be3d441"><con:settings/><con:config><script>int count = 0
+		
+while(count&lt;5) {
+	log.info (count)
+	count++
+}</script></con:config></con:testStep><con:testStep type="groovy" name="For" id="d718f4fb-da3a-47f1-bf52-534f8ca326bb"><con:settings/><con:config><script>for(int i = 0; i&lt;5; i++) {
+
+	log.info i
+}
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="for - in" id="db980d23-4d77-470d-ae0a-491c7046a6d4"><con:settings/><con:config><script>String[] array = ["test0", "test1", "test2", "test3"]; 
+		
+for(String s in array) { 
+	log.info s
+}
+
+//==========================
+
+for(int i in 1..5) {
+     log.info (i)
+}
+
+//===========================
+
+def employee = ["Ken" : 21, "John" : 25, "Sally" : 22];
+		
+for(emp in employee) {
+    println(emp);
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Break" id="17d1f54b-de9d-49c2-99ca-c28cc693f6f9"><con:settings/><con:config><script>int[] array = [0,1,2,3];
+		
+ for(int i in array) {
+    log.info (i)
+    if(i == 2)
+    break;
+ }</script></con:config></con:testStep><con:testStep type="groovy" name="Continue" id="e2c1c8f3-4c15-4142-95bf-b82561bc436a"><con:settings/><con:config><script>int[] array = [0,1,2,3];
+	
+for(int i in array) {
+	log.info(i)
+	if(i == 2)
+	continue;
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Switch" id="24b08c6c-d7eb-449f-bb64-fcdc968039ae"><con:settings/><con:config><script>//initializing a local variable 
+int a = 2
+
+//Evaluating the expression value 
+switch(a) {            
+	//There is case statement defined for 4 cases 
+	// Each case statement section has a break condition to exit the loop 
+		
+	case 1: 
+	  log.info("The value of a is One"); 
+	  break; 
+	case 2: 
+	  log.info("The value of a is Two"); 
+	  break; 
+	case 3: 
+	  log.info("The value of a is Three"); 
+	  break; 
+	case 4: 
+	  log.info("The value of a is Four"); 
+	  break; 
+	default: 
+	  log.info("The value is unknown"); 
+	  break; 
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/><con:setupScript/></con:testSuite><con:testSuite id="2cb645de-1ce5-4a0a-9461-6318238a8d15" name="SupportingTestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3d14a564-e2d2-47f3-8dbf-ff0f4712425c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SupportingRunTest" searchProperties="true"><con:settings/><con:testStep type="groovy" name="SupportingSampleStep" id="375ee5ae-5559-4ac3-9d92-66972e50675c"><con:settings/><con:config><script>log.info "    This is supporting sample test step!  "
+//testRunner.fail("Bard Request")
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="6d65f7db-8916-4fe1-9f31-08e7af0e2f09" name="GettersAndSetters"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="b6752ffa-e833-4532-938b-2dde929bae6c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GettersAndSetters" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="20078660-ad73-437f-8dbd-41eb52410cf1"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Name</con:name><con:value>I am a Test Step</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="GettersAndSetters" id="f8de9841-e80b-4fcc-b964-b1ad2e57c06b"><con:settings/><con:config><script>//Project
+testRunner.testCase.testSuite.project.setPropertyValue("Name","I am a Project")
+testRunner.testCase.testSuite.project.getPropertyValue("Name")
+
+//TestSuite
+testRunner.testCase.testSuite.setPropertyValue("Name","I am a TestSuite")
+testRunner.testCase.testSuite.getPropertyValue("Name")
+
+//TestCase
+testRunner.testCase.setPropertyValue("Name","I am a TestCase")
+testRunner.testCase.getPropertyValue("Name")
+
+//TestStep
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("Name","I am a Test Step")
+testRunner.testCase.getTestStepByName("Properties").getPropertyValue("Name")
+
+//Global
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "Name","I am in Global Prop" )
+com.eviware.soapui.SoapUI.globalProperties.getPropertyValue( "Name")
+</script></con:config></con:testStep><con:testStep type="groovy" name="GettersUsingExpand" id="9e871487-3c00-4a2f-ba79-b586c1002b01"><con:settings/><con:config><script>// Get a test case property
+def testprop  = context.expand('${#TestCase#Name}')
+log.info ("The property is : " + testprop)
+
+// Get a test suite property
+def suiteprop = context.expand('${#TestSuite#Name}')
+log.info ("The property is : " + suiteprop)
+
+// Get a test suite property
+def projectprop = context.expand('${#Project#Name}')
+log.info ("The property is : " + projectprop)
+
+// Get a test suite property
+def stepprop = context.expand('${Properties#Name}')
+log.info ("The property is : " + stepprop)
+
+// Get a system property
+def sysprop = context.expand('${#System#user.home}')
+log.info ("The property is : " + sysprop)
+
+// Get a Env property
+def envprop = context.expand('${#Env#JAVA_HOME}')
+log.info ("The property is : " + envprop)
+
+
+// Get a global property
+def globalprop = context.expand('${#Global#Global_prop}')
+log.info ("The property is : " + globalprop)
+</script></con:config></con:testStep><con:testStep type="groovy" name="AddRemove" id="a41875cd-0089-4771-86da-220b632af5ff"><con:settings/><con:config><script>// Add Property
+testRunner.testCase.testSuite.project.addProperty("DOB")
+
+// Remove property
+//Project
+testRunner.testCase.testSuite.project.removeProperty("Name");
+//TestSuite
+testRunner.testCase.testSuite.removeProperty("Name")
+</script></con:config></con:testStep><con:testStep type="groovy" name="LoopingProperties" id="30de6390-b8bc-4329-b4b4-43944688d25b"><con:settings/><con:config><script>// Loop through properties
+
+testRunner.testCase.properties.each
+{
+ key,value ->
+ log.info (testRunner.testCase.getPropertyValue(key))
+ //log.info (key+" - "+value)
+}
+</script></con:config></con:testStep><con:properties><con:property><con:name>Name</con:name><con:value>I am a TestCase</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>DOB</con:name></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
